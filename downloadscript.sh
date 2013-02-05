@@ -2,9 +2,9 @@
 # Author : Rajat Khanduja
 # Script to download captchas from the webmail page
 
-i=1
+i=0
 
-while [ $i -ne 1000 ]
+while [ $i -ne 100 ]
 do
   wget --no-proxy --no-check-certificate \
   https://webmail.iitg.ernet.in/plugins/captcha/backends/watercap/image_generator.php -O $i.png
